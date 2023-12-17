@@ -15,7 +15,7 @@ def get_x():
     return x
 
 def fill(num_data): 
-    with open(r'/Users/jantheiss/Desktop/Python/plant_regression/data.csv', 'w') as f:
+    with open(<ADD THE PATH TO A CSV FILE CONTAINING YOUR DATA>, 'w') as f:
         writer = csv.writer(f)
         for i in range(num_data):
             x = get_x()
@@ -36,14 +36,14 @@ def fill(num_data):
 fill(10000)
 
 
-file = pd.read_csv(r'/Users/jantheiss/Desktop/Python/plant_regression/data.csv')
+file = pd.read_csv(<ADD THE PATH TO A CSV FILE CONTAINING YOUR DATA>)
 print("\nOriginal file:")
 print(file)
 
 headerList = ['x1', 'x2', 'x3', 'y']
 
-file.to_csv(r'/Users/jantheiss/Desktop/Python/plant_regression/data2.csv', header = headerList, index = False)
+file.to_csv(<ADD THE PATH AND NAME TO SAVE TO NEW FILE>', header = headerList, index = False)
 
-file2 = pd.read_csv(r'/Users/jantheiss/Desktop/Python/plant_regression/data2.csv')
+file2 = pd.read_csv(<ADD THE PATH TO THE UPDATED CSV FILE CONTAINING YOUR DATA>')
 print('\nModified file:')
 print(file2)
