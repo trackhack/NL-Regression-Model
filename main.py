@@ -8,7 +8,7 @@ from dense_nonlin_reg import dense_regression_model
 if __name__ == "__main__":
     model = dense_regression_model()
 
-    logger = pl_loggers.TensorBoardLogger(save_dir = r"/Users/jantheiss/Desktop/Python/plant_regression/logs")
+    logger = pl_loggers.TensorBoardLogger(save_dir = <ADD THE PATH TO LOG FOLDER>)
     trainer = pl.Trainer(devices = 1, accelerator = "auto", max_epochs = 100, logger = logger, callbacks = EarlyStopping(monitor = "val_loss", min_delta = 0.01, patience = 5, verbose = True))
 
     data = DataLoading() 
