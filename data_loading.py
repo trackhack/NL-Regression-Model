@@ -14,7 +14,7 @@ class DataLoading:
         self.num_workers = 0
     
     def load_data(self):
-        file = pd.read_csv(r'/Users/jantheiss/Desktop/Python/plant_regression/data2.csv')
+        file = pd.read_csv(<ADD THE PATH TO A CSV FILE CONTAINING YOUR DATA>)
         #input_data = file['input'].values.reshape(-1,1)
         #output_data = file['output'].values.reshape(-1,1)
         #my_df = pd.DataFrame(file)
